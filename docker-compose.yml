@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: escrow-pg
+    environment:
+      POSTGRES_DB: escrow
+      POSTGRES_USER: escrow
+      POSTGRES_PASSWORD: escrow
+    ports:
+      - "5433:5432"
